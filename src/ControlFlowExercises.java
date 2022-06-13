@@ -30,6 +30,8 @@ public class ControlFlowExercises {
 //        System.out.printf("%d\n",i);
 //    }
 
+
+        //2
         for (int i = 0; i <= 100; i++) {
 
             if(i == 0) {
@@ -43,5 +45,42 @@ public class ControlFlowExercises {
             }else
                 System.out.printf("\n%d",i);
         }
+
+        //3
+//        System.out.printf("\n\nPlease enter a number.\n");
+//        int userInput = in.nextInt();
+//        System.out.printf("You entered the number: %d", userInput);
+//
+//        for (int i = userInput; 0 <= userInput; i--);
+//        String displayNumber = "Number";
+//        System.out.printf("\n%i",displayNumber);
+
+
+        //4
+
+        String gradesA = ("\nA: 100 - 88");
+        String gradesB = ("\nB: 87 - 80");
+        String gradesC = ("\nC: 79 - 67");
+        String gradesD = ("\nD: 66 - 60");
+        String gradesF = ("\nF: 59 - 0");
+
+        System.out.printf("\nPlease input your grade.");
+        int printGrade = in.nextInt();
+
+        if(printGrade >= 88) {
+            System.out.printf("%s", gradesA);
+        }else if (printGrade <= 87 && printGrade >= 80) {
+            System.out.printf("%s", gradesB);
+        }else if (printGrade <= 79 && printGrade >= 67 ) {
+            System.out.printf("%s", gradesC);
+        }else if (printGrade <= 66 && printGrade >= 60) {
+            System.out.printf("%s", gradesD);
+        }else if (printGrade <= 59) {
+            System.out.printf("%s", gradesF);
+        }
+
+
     }
+
+
 }
