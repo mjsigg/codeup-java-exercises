@@ -2,6 +2,7 @@ public class Person {
 
     private String name;
 
+    //constructor
     public Person(String name) {
         this.name = name;
         System.out.format("Hey hey hey, its-a me, %s.\n",name);
