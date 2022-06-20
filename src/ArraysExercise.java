@@ -2,13 +2,19 @@ import java.util.Arrays;
 
 public class ArraysExercise {
 
-    public ArraysExercise () {}
+    public ArraysExercise () {
+
+    }
 
     static String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
     static String[] foodForTonight = {"4x4 Protein Style", "Maybe a shake", "Fries Animal style"};
 
-    public int addPerson(Person[] array, Person thing) {
-        return array.length + 1;
+
+
+    public static Person[] addPerson(Person[] array, Person thing) {
+        Person[] people = Arrays.copyOf(array, array.length + 1);
+        people[array.length] = thing;
+        return people;
     }
 
     public static void main(String[] args) {

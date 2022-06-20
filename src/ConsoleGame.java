@@ -65,7 +65,7 @@ public class ConsoleGame {
 //                for (int i = 0; i <= 1; i++) {
             System.out.println("Ay");
             Thread.sleep(400);
-            System.out.println("boi");
+            System.out.println("man");
             Thread.sleep(700);
             userName = getName();
             Thread.sleep(700);
