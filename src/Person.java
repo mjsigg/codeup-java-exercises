@@ -1,10 +1,11 @@
 public class Person {
 
     private String name;
-    private int age;
 
-    public Person() {
-
+    //constructor
+    public Person(String name) {
+        this.name = name;
+        System.out.format("Hey hey hey, its-a me, %s.\n",name);
     }
 
     public String getName(){
@@ -21,12 +22,12 @@ public class Person {
         return String.format("Hello %s",this.name);
     }
 
-
     public static void main(String[] args) {
-        Person boi = new Person();
+        Person boi = new Person("boi");
 
-        Person rick = new Person();
-        boi.setName("dude");
+        Person rick = new Person("dude");
+        Person ami = new Person("ami");
+        System.out.println(ami.name);
 
         System.out.println(boi.getName());
         System.out.println(rick.sayHello());
