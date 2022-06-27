@@ -66,7 +66,7 @@ public class GradesApplication {
         boolean decision = true;
 
         while (decision) {
-            System.out.printf("What student would you like to inquire about?");
+            System.out.printf("What student would you like to inquire about?\n");
             students.forEach((key, value) -> System.out.println("| "+ key +" |" ));
 
             Scanner userInput = new Scanner(System.in);

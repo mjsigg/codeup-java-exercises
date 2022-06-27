@@ -2,7 +2,7 @@ package util;
 
 import java.util.Scanner;
 
-public class Input {
+public class Input{
     private static Scanner scanner = new Scanner(System.in);
     public Input(){}
 
@@ -16,47 +16,55 @@ public class Input {
             return false;
     }
 
+//    public int getInt() {
+//        System.out.println("Gimme a number.\n");
+//        int answer = Integer.parseInt(getString());
+//
+//        if (answer == Integer.valueOf(answer)) {
+//            answer == scanner.nextInt();
+//        }
+//        return 0;
+//    }
 
-    public int getInt() {
-        System.out.println("Gimme a number.");
-        int answer = scanner.nextInt();
-        scanner.nextLine();
-        return answer;
-    }
-
-    int getInt(int min, int max) {
+    int getInt(int min, int max) throws Exception{
         System.out.format("Gimme a number between %d and %d\n",min,max );
-        int answer = scanner.nextInt();
+        int answer = Integer.valueOf(getString());
 
-        if (answer < min || answer > max) {
-            return getInt(min,max);
-        }else
-
-            return answer;
-    }
-
-    double getDouble() {
-        System.out.println("Gimme a number.");
-        double answer = scanner.nextDouble();
+        try{
+            if (answer < min || answer > max) {
+                throw new Exception("read the curriculum");
+            }
+            System.out.println(answer);
+        } catch (NumberFormatException e) {
+            System.out.println("Nah playa, i said gimme a numba");
+            getInt(min, max);
+        }
         return answer;
     }
 
-    double getDouble(double min, double max) {
+//    double getDouble() {
+//        System.out.println("Gimme a number.\n");
+//        double answer = scanner.nextDouble();
+//        return answer;
+//    }
+
+    double getDouble(double min, double max) throws Exception {
         System.out.format("Gimme a number between %.1f and %.1f\n",min,max );
-        double answer = scanner.nextDouble();
-
-        if (answer < min || answer > max) {
-            return getDouble(min,max);
-        }else
-
-            return answer;
+        double answer = Double.valueOf(getString());
+        try {
+            if (answer < min || answer > max) {
+                throw new Exception("Read the curriculum");
+            }
+            System.out.println(answer);
+        } catch (Exception e) {
+            throw new Exception("read the curriculum");
+        }
+        return answer;
     }
 
-    String getString() {
-        System.out.println("Tell me something in explicit detail.");
+    String getString(){
         String answer = scanner.nextLine();
         return answer;
     }
-
 
 }
