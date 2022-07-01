@@ -62,7 +62,6 @@ public class ControlFlowExercises {
             }
         }
 
-
         //4
 
 //        String gradesA = ("\nA: 100 - 88");
