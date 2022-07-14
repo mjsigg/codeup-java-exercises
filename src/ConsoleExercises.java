@@ -38,9 +38,6 @@ public class ConsoleExercises {
 
         ///classroom part
 
-
-
-
         /// 1
 
         System.out.println("Gimme length.");
