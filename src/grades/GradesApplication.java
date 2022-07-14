@@ -1,3 +1,7 @@
+package grades;
+
+import grades.Student;
+
 import java.util.*;
 
 public class GradesApplication {
@@ -44,11 +48,11 @@ public class GradesApplication {
 //            System.out.println(s);
 //        }
 //
-//        for (Student student : students.values()) {
+//        for (grades.Student student : students.values()) {
 //            System.out.println(student.getGradeAverage());
 //        }
 //
-//        for (Map.Entry<String, Student> stringStudentEntry : students.entrySet()) {
+//        for (Map.Entry<String, grades.Student> stringStudentEntry : students.entrySet()) {
 //            System.out.println(stringStudentEntry.getKey());
 //            System.out.println(stringStudentEntry.getValue().getStudentName());
 //        }
@@ -105,11 +109,11 @@ public class GradesApplication {
 
 
 
-//        for (Student student : students.values()) {
+//        for (grades.Student student : students.values()) {
 //            System.out.println(student.getGradeAverage());
 //        }
 
-//        for (Student student : students.keySet()) {
+//        for (grades.Student student : students.keySet()) {
 //            System.out.println(student.);
 //        }
 

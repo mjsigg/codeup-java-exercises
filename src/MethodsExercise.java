@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MethodsPractice {
+public class MethodsExercise {
     Scanner scan = new Scanner(System.in);
 
     public static int getDifference(int x, int y) {

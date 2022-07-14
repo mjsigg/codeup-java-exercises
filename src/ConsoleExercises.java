@@ -10,6 +10,14 @@ public class ConsoleExercises {
         double pi = 3.14159;
         System.out.format("The value of pi is approximately %.2f%n .", pi);
 
+        //1a
+        System.out.println("tThe value of pi is approximately " + pi + ".");
+
+        // Explore the scanner class
+        int gimmeNumber = scanner.nextInt();
+        System.out.println(gimmeNumber);
+
+
 //        System.out.println("Gimme a color.");
 //        String userInput1 = scanner.nextLine();
 //        System.out.printf("\nYou put in, %s", userInput1);
@@ -28,17 +36,22 @@ public class ConsoleExercises {
         String answer = scanner.nextLine();
         System.out.printf("\n You answered, %s", answer);
 
+        ///classroom part
 
+        /// 1
 
+        System.out.println("Gimme length.");
+        int roomLength = scanner.nextInt();
+        System.out.println("Gimme width.");
+        int roomWidth = scanner.nextInt();
+        roomWidth = 10;
+        roomLength = 10;
 
-
-
-
-
-
-
-
-
+        //// 2
+        int roomRectangle = roomLength * roomWidth;
+        int roomPerimeter = 2 * (roomRectangle);
+        System.out.println(roomRectangle);
+        System.out.println(roomPerimeter);
 
 
     }
