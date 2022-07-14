@@ -5,19 +5,19 @@ public class Movie {
     private String category;
 
     public Movie(String name, String category) {
-        this.name = getName(name);
-        this.category = getCategory(category);
+        this.name = name;
+        this.category = category;
     }
 
-    public String getName(String name) {
-        return this.name;
+    public String getName() {
+        return name;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public String getCategory(String category) {
+    public String getCategory() {
         return this.category;
     }
 
