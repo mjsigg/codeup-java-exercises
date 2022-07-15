@@ -41,7 +41,6 @@ public class Student {
         return sum / grades.size();
     }
 
-
     public static void main(String[] args) {
 
     }
